@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NL Consulting</title>
+<meta name="description" content="NL Consulting builds and licenses Waypoint, software that personal trainers and small fitness businesses use to run their clients, packages, memberships and payments.">
+<style>
+  :root {
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --text: #18202b;
+    --muted: #4f5a68;
+    --line: #e2ddd2;
+    --accent: #8a6a1f;
+    --accent-soft: #f1e7cf;
+    --navy: #0f1d33;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #08111f;
+      --surface: #0f1b2e;
+      --text: #f3efe7;
+      --muted: #c4bdb0;
+      --line: #22314a;
+      --accent: #d9b95c;
+      --accent-soft: #1c2a40;
+      --navy: #050b15;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 32px; }
+  .mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 12px;
+    background: var(--navy); color: #d9b95c; border: 1px solid var(--line);
+    font-weight: 700; letter-spacing: 0.02em; font-size: 16px;
+  }
+  h1 { font-size: 2.2rem; line-height: 1.2; margin: 20px 0 8px; }
+  .lede { font-size: 1.15rem; color: var(--muted); margin: 0; }
+  main { padding-bottom: 48px; }
+  section {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 0 0 16px;
+  }
+  h2 { font-size: 1.2rem; margin: 0 0 10px; }
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 1.2em; }
+  li { margin: 0 0 8px; }
+  li:last-child { margin-bottom: 0; }
+  .tag {
+    display: inline-block; font-size: 0.8rem; font-weight: 600;
+    color: var(--accent); background: var(--accent-soft);
+    border-radius: 999px; padding: 1px 10px; margin-left: 6px; vertical-align: 1px;
+  }
+  strong { font-weight: 650; }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 24px 0 40px;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 480px) {
+    header { padding: 36px 0 24px; }
+    h1 { font-size: 1.8rem; }
+    section { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">NL</div>
+    <h1>NL Consulting</h1>
+    <p class="lede">Software for personal trainers and small fitness businesses.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>What we do</h2>
+      <p>NL Consulting builds and licenses <strong>Waypoint</strong>, an online system that personal trainers and small fitness businesses use to run their day-to-day work.</p>
+      <ul>
+        <li><strong>Clients:</strong> client records, and a portal where each client sees their details, sessions and purchases.</li>
+        <li><strong>Services, packages and memberships:</strong> what the business offers and what it charges.</li>
+        <li><strong>Session credits:</strong> how many sessions each client has bought, used and has left.</li>
+        <li><strong>Payments:</strong> clients pay by card online, and staff can charge a card the client has saved.</li>
+        <li><strong>Scheduling</strong><span class="tag">In development</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Who our customers are</h2>
+      <p>Our customers are fitness businesses. Each one licenses Waypoint from NL Consulting by subscription, under a signed agreement. We do not sell training sessions or other goods to the public.</p>
+    </section>
+
+    <section>
+      <h2>How payments work</h2>
+      <p>Payments are processed by <strong>Stripe</strong>. Each business links its own Stripe account to Waypoint through Stripe Connect, and its clients' payments go directly into that business's account. Client money does not pass through NL Consulting, and card details are entered on Stripe's own forms; they never reach our servers.</p>
+      <p>NL Consulting receives a small flat fee on each payment, agreed with each business in its agreement and collected by Stripe as part of the payment.</p>
+    </section>
+
+    <section>
+      <h2>A question about a charge?</h2>
+      <p>If you paid a fitness business that uses Waypoint, the business you bought from is the seller, and its name appears on your card statement. Please contact that business about your purchase, refunds or cancellations.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 NL Consulting. Waypoint is a product of NL Consulting.</p>
+  </footer>
+</div>
+</body>
+</html>
